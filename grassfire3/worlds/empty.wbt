@@ -1,0 +1,116 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.000375831499138442 -0.789415967476687 -0.6138585252674517 3.1524803657478326
+  position -0.38893791671257444 9.194919224352294 -2.5011850271658096
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  translation 0 0 0.02
+  floorSize 3.5 4
+}
+Solid {
+  translation 0 0 -0.73
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 2.5 0.5 0.5
+      }
+    }
+  ]
+}
+Solid {
+  translation -1.25 0 0.31
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1 0.5 0.5
+      }
+    }
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation 0.5 0 1.81
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(4)"
+}
+Solid {
+  translation 0 0 1.78
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.5 0.02 0.5
+      }
+    }
+  ]
+  name "solid(5)"
+}
+Solid {
+  translation 0 0 -1.73
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.5 0.02 0.5
+      }
+    }
+  ]
+  name "solid(6)"
+}
+Solid {
+  translation 1.24 0 0.31
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1 0.5 0.5
+      }
+    }
+  ]
+  name "solid(2)"
+}
+Solid {
+  translation 0 0 1.31
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(3)"
+}
+E-puck {
+  translation 0 0 -1.75
+  rotation 0 1 0 3.14
+}

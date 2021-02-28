@@ -3,8 +3,8 @@ WorldInfo {
   coordinateSystem "NUE"
 }
 Viewpoint {
-  orientation -0.14356563307430478 -0.9586126836692133 -0.2458671017205899 2.1456010453164547
-  position -6.623923971251157 4.064863121132908 -4.042435797577746
+  orientation -0.16244227289890356 -0.9533244150031661 -0.2545291097975031 2.0721768532344975
+  position -6.73901326829761 4.175415572394489 -3.602651954957593
 }
 TexturedBackground {
 }
@@ -124,7 +124,7 @@ Robot {
   boundingObject USE body
   physics Physics {
   }
-  controller "potentioal_feild_controller"
+  controller "my_controller_dwa"
 }
 Solid {
   translation 0 0.1 0

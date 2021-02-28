@@ -1,0 +1,103 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation 0.0027446221424950006 0.8106197802726676 0.5855664256768713 3.138791354707667
+  position -0.041192858740822125 4.803720114037002 -1.763222926886422
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3.5 2.5
+}
+E-puck {
+  translation -1.5 0 -1
+  rotation 0 1 0 3.14
+  controller "grassfire1"
+}
+Solid {
+  translation 0.75 0 -0.5
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 1 0.5 0.5
+      }
+    }
+  ]
+  name "solid(4)"
+}
+Solid {
+  translation 0 0 1
+  children [
+    DEF w1 Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(2)"
+}
+Solid {
+  translation 0.5 0 0.5
+  children [
+    USE w1
+  ]
+  name "solid(3)"
+}
+Solid {
+  translation -0.5 0 -0.49
+  children [
+    DEF w3 Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 1.5
+      }
+    }
+  ]
+}
+Solid {
+  translation -1 0 0
+  children [
+    USE w3
+  ]
+  name "solid(1)"
+}
+Solid {
+  translation -1.5 0.01 -1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.5 0.02 0.5
+      }
+    }
+  ]
+  name "solid(5)"
+}
+Solid {
+  translation 1.5 0 1
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+      }
+      geometry Box {
+        size 0.5 0.02 0.5
+      }
+    }
+  ]
+  name "solid(6)"
+}

@@ -1,0 +1,142 @@
+#VRML_SIM R2021a utf8
+WorldInfo {
+  coordinateSystem "NUE"
+}
+Viewpoint {
+  orientation -0.003196673764990739 -0.8762336499911505 -0.4818758884816984 3.1426052814972634
+  position 0.012384589770481541 5.143451988040272 -3.4140618346919647
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 3 3
+}
+Solid {
+  translation -0.25 0 -0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+}
+Solid {
+  translation -0.75 0 -0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(2)"
+}
+Solid {
+  translation 0.25 0 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(4)"
+}
+Solid {
+  translation 0.75 0 0.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(5)"
+}
+Solid {
+  translation 1.25 0 -0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(6)"
+}
+Solid {
+  translation -0.5 0 1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(7)"
+}
+Solid {
+  translation -1 0 0.75
+  children [
+    Shape {
+      appearance PBRAppearance {
+      }
+      geometry Box {
+        size 0.5 0.5 0.5
+      }
+    }
+  ]
+  name "solid(8)"
+}
+Solid {
+  translation -1.25 0 -1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 0 1
+        roughness 1
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.5 0.02 0.5
+      }
+    }
+  ]
+  name "solid(3)"
+}
+Solid {
+  translation 1.25 0 1.25
+  children [
+    Shape {
+      appearance PBRAppearance {
+        baseColor 0 1 0
+        roughness 1
+        metalness 0.5
+      }
+      geometry Box {
+        size 0.5 0.02 0.5
+      }
+    }
+  ]
+  name "solid(1)"
+}
+E-puck {
+  translation -1.28 0 -1.28
+  rotation 0 1 0 3.14
+  controller "grassfire2"
+}
